@@ -1,8 +1,9 @@
 from flask import Flask
 import pymongo
+from os import environ as env
 
 # Connection string from MongoDb Atlas
-CONN_STRING = "mongodb+srv://shanu05official:fhcnVcJjMvnefACu@cluster0.otbkjtz.mongodb.net/?retryWrites=true&w=majority"
+CONN_STRING = f"mongodb+srv://{env['MONGO_USER']}:{env['MONGO_PASS']}@cluster0.otbkjtz.mongodb.net/?retryWrites=true&w=majority"
 
 # Initiating mongodb client
 def open_mongo_diseases(index):

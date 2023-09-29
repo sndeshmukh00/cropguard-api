@@ -5,6 +5,7 @@ import numpy as np
 from io import BytesIO
 from PIL import Image
 import tensorflow as tf
+from os import environ as env
 
 app = FastAPI()
 
@@ -29,7 +30,7 @@ with open("rice_disease_names.txt", 'r') as f:
 
 @app.get("/ping")
 async def ping():
-    return "Api is alive"
+    return f"{env['ENV_NAME']} Api is alive"
 
 def read_file_as_image(data) -> np.ndarray:
     image = np.array(Image.open(BytesIO(data)))
