@@ -1,0 +1,9 @@
+Rice___Bacterial_Leaf_Blight 0
+Rice___Blast 1
+Rice___Brown_Spot 2
+Rice___Healthy 3
+Rice___Hispa 4
+Rice___Leaf_Scald 5
+Rice___Leaf_Smut 6
+Rice___Sheath_Blight 7
+Rice___Tungro 8
